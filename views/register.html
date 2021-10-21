@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrarse - Mercado Liebre</title>
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="https://kit.fontawesome.com/90efaed707.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="top-header">
+            <img src="./images/logo-mercado-liebre.svg" alt="Logo Mercado Liebre">
+            <form action="#">
+                <input type="text" placeholder="Búsqueda..." name="Buscar">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
+            <h2>
+                <i class="fas fa-hand-holding-usd"></i>Compra en cuotas y sin tarjeta de crédito
+            </h2>
+        </div>
+
+        <a href="#" id="fas">
+            <i class="fas fa-bars"></i>
+        </a>
+        
+        <nav class="bottom-header">
+            <ul type="left">
+                <li><a href="#">Ofertas</a></li>
+                <li><a href="#">Tiendas Oficiales</a></li>
+                <li><a href="#">Vender</a></li>
+                <li><a href="#">Ayuda</a></li>
+            </ul>
+            <ul type="circle" class="login">
+                <li><a href="./register">Crea tu cuenta   <i class="fas fa-id-card"></i></a></li>
+                <li><a href="./login">Ingresa  <i class="fas fa-sign-in-alt"></i></a></li>
+                <li><a href="#">Mis compras  <i class="fas fa-shopping-basket"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="register-main">
+        <div>
+            <h2>Completa tus datos</h2>
+            <form action="/register" method="POST">
+                <p>
+                    <label for="name">Nombre:</label>
+                    <input type="text" name="name" required>
+                </p>
+                <br>
+                <p>
+                    <label for="last-name">Apellido:</label>
+                    <input type="text" name="last-name" required>
+                </p>
+                <br>
+                <p>
+                    <label for="born-date">Fecha de Nacimiento:</label>
+                    <input type="date" name="born-date" min="1920-01-01" required>
+                </p>
+                <br>
+                <p>
+                    <label for="address">Dirección:</label> 
+                    <input type="text" name="address" required>
+                </p>
+                <br>
+                <p class="radio-checkbox-selections">
+                    <label for="profile-user">¿Quieres comprar o vender?</label>
+                    <input type="radio" name="profile-user" value="buy" checked="checked"><label for="buy">Comprar</label>
+                    <input type="radio" name="profile-user" value="sell"><label for="buy">Vender</label>
+                    <input type="radio" name="profile-user" value="both"><label for="both">Ambos</label>
+                </p>
+                <br>
+                <p class="radio-checkbox-selections">
+                    <label for="interest" >Categorías de interés:</label>
+                    <input type="checkbox" name="interest" value="electro"><label for="electro">Electro</label>
+                    <input type="checkbox" name="interest" value="fashion"><label for="fashion">Moda</label>
+                    <input type="checkbox" name="interest" value="house"><label for="house">Hogar</label>
+                    <input type="checkbox" name="interest" value="toys"><label for="toys">Juguetería</label>
+                    <input type="checkbox" name="interest" value="healthy-lifestyle"><label for="healthy-lifestyle">Vida Sana</label>
+                </p>
+                <br>
+                <p class="user-photo">
+                    <label for="user-photo">Foto de Usuario:</label>
+                    <input type="file" name="user-photo" accept=".jpg, .png, .gif, .svg" id="photo">
+                </p>
+                <br>
+                <p>
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" name="email" required>
+                </p>
+                <br>
+                <p>
+                    <label for="passwd">Contraseña:</label>
+                    <input type="password" name="passwd" id="passwd" required>
+                </p>
+                <br>
+                <p>
+                    <label for="passwd">Confirmar contraseña:</label>
+                    <input type="password" name="passwd" id="passwd" required>
+                </p>
+                <br>
+                <p class="buttons">
+                    <button type="reset">Borrar</button>
+                    <button type="submit"><a href="/" class="boton-enviar">Enviar</a></button>
+                </p>
+            </form>
+        </div>
+    </main>
+</body>
+</html>

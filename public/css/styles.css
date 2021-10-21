@@ -1,0 +1,446 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* --- header --- */
+
+header {
+    padding: 20px;
+    background-color: #EAC926;
+}
+
+.top-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+div.top-header img{
+    width: 180px;
+}
+
+.top-header form {
+    margin-top: 10px;
+    text-align: center;
+    display: flex;
+    width: 31vw;
+    justify-content: center;
+}
+
+div.top-header form input{
+    display: inline-block;
+    border: none;
+    border-radius: 3px;
+    height: 30px;
+    max-width: 500px;
+    width: inherit;
+}
+
+div.top-header form button{
+    display: inline-block;
+    border: none;
+    height: 30px;
+    width: 30px;
+    position: relative;
+    left: -30px;
+}
+
+.top-header form button i {
+    color: #bebebe;
+    text-align: left;
+}
+
+div.top-header h2{
+    display: block;
+    text-align: center;
+    font-weight: 300;
+    font-size: 18px;
+    padding: 10px;
+}
+
+a#fas {
+    display: block;
+    background-color: #03264C;
+    max-width: 50px; 
+    margin: auto;
+    padding: 10px 0;
+    border-radius: 7px;
+    margin-bottom: 10px;
+}
+
+a#fas {
+    text-align: center;
+    color: white;
+    font-size: 25px;
+}
+
+nav.bottom-header {
+    display: none;
+}
+
+nav.bottom-header ul {
+    list-style: none;
+}
+
+nav.bottom-header ul li a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    padding: 3px;
+}
+
+/* --- main --- */
+
+main {
+    width: 90%;
+    margin: auto;
+    background-color: #ebebeb;
+}
+
+.banner img{
+    width: 100vw;
+}
+
+section {
+    text-align: center;
+    padding: 20px;
+}
+
+main h3 {
+    text-align: center;
+    font-size: 24px;
+    padding: 10px;
+    margin: 10px;
+}
+
+main section article h4 {
+    display: none;
+}
+
+main section article:hover h4 {
+    display: block;
+}
+
+main section article:hover {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);  
+    transition: ease 0.7s;
+}
+
+section.main-section article {
+    width: 250px;
+    margin: auto;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: white;
+    position: relative;
+}
+
+section article img {
+    height: 200px;
+    display: block;
+    margin: auto;
+}
+
+section img, section p, section h4 {
+    padding: 3px;
+    text-align: left;
+}
+
+section.main-section article i{
+    display: block;
+    font-size: small;
+    width: 30px;
+    padding: 7px 3.5px;
+    color: #39b54a;
+    border: #39b54a 2px solid;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    bottom: 90px;
+    transition: 700ms;
+}
+
+section.main-section article i:hover{
+    transform: rotateZ(-90deg); 
+}
+
+section article div.price-off {
+    padding: 20px 0; 
+    display: flex;
+    align-items: flex-start;
+}
+
+section article p.precio {
+    font-size: 18px;
+    margin-right: 5px;
+}
+
+section article p.descuento {
+    color: #39b54a;
+}
+
+
+
+/* --- footer --- */
+
+footer section article{
+    width: 280px;
+    margin: 10px;
+}
+
+footer section article i {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #03264C;
+}
+
+footer section article h4{
+    font-size: 18px;
+}
+
+footer section article p {
+    font-size: 13px;
+    text-align: justify;
+}
+
+footer div.copyright {
+    font-size: 13px;
+    text-align: center;
+}
+
+/* --- MAIN DEL REGISTRO --- */
+.register-main {
+    background-color: white;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.register-main h2 {
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.register-main div{
+    width: 90%;
+    max-width: 500px;
+    min-width: 250px;
+    margin: auto;
+    padding: 30px;
+    border: 1px solid #bebebebe;
+    border-radius: 5px;
+    background-color: #ebebeb;
+}
+
+.register-main form p {
+    max-width: 500px;
+    min-width: 200px;
+    margin: auto;
+}
+
+.register-main label {
+    font-style: italic;
+    color: gray;
+    display: block;
+    margin: auto;
+    margin-bottom: 5px;
+    width: 90%;
+}
+
+.register-main input {
+    display: block;
+    width: 90%;
+    height: 40px;
+    margin: auto;
+}
+
+.radio-checkbox-selections {
+    position: relative;
+}
+
+.radio-checkbox-selections label{
+    display: block;
+    padding: 3px;
+    margin: auto;
+}
+
+.radio-checkbox-selections input {
+    position: absolute;
+    height: 20px;
+}
+
+.user-photo input{
+    height: 30px;
+}
+
+.register-main p.buttons {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.register-main div button {
+    display: block;
+    width: 48%;
+    height: 2.5em;
+    background-color: #03264C;
+    border: none;
+    color: white;
+    margin: auto;
+    cursor: pointer;
+    transition: .7s;
+}
+
+.register-main div button:hover {
+    background-color: #0022AA;
+}
+
+.register-main a.boton-enviar {
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+
+/* --- MAIN DEL LOGIN --- */
+.login-main {
+    background-color: white;
+    width: 100vw;    
+    margin-top: 80px;
+    max-width: 900px;
+    margin-bottom: 40px;
+}
+
+.login-main div {
+    border: 1px solid #bebebebe;
+    border-radius: 10px;
+    padding: 40px;
+    background-color: #ebebeb;
+    max-width: 500px;
+    min-width: 300px;
+    margin: auto;
+}
+
+.login-main h2 {
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.login-main form {
+    display: block;
+}
+
+.login-main label {
+    font-style: italic;
+    color: gray;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.login-main input {
+    width: 100%;
+    height: 3em;
+}
+
+.login-main button {
+    margin-top: 30px;
+    width: 100%;
+    height: 3em;
+    border: none;
+    border-radius: 5px;
+    background-color: #03264C;
+    color: white;
+    font-weight: bold;
+    transition: 400ms;
+}
+
+.login-main button:hover {
+    background-color: #0022AA;
+}
+
+/* --- Media Queries --- */
+
+@media (min-width: 481px) {
+
+    /* --- HEADER --- */
+
+    div.top-header h2 {
+        text-align: right;
+        max-width: 330px;
+        font-size: 1em;
+    }
+
+
+    header a#fas {
+        display: none;
+    }
+
+    nav.bottom-header {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 15px;
+    }
+
+    nav.bottom-header ul {
+        display: flex;
+    }
+
+    nav.bottom-header ul li a{
+        text-align: left;
+        margin: 0 3px;
+        
+    }
+
+    /* --- MAIN --- */
+    section {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    /* --- FOOTER --- */
+    footer section {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+}
+
+@media (min-width: 1279px) {
+
+    div.top-header img {
+        width: 150px;
+    }
+
+    div.top-header, nav.bottom-header {
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .top-header{
+        align-items: center;
+        padding-bottom: 5px;
+    }
+
+    div.top-header h2 {
+        max-width: none;
+        font-size: 19px;
+        font-weight: 400;
+    }
+
+    header nav ul li a {
+        padding: 0 10px;
+        font-size: 20px;
+    }
+} 
+
+
+
+
