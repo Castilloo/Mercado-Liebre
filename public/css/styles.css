@@ -41,7 +41,6 @@ div.top-header form input{
     height: 30px;
     max-width: 500px;
     width: 120%;
-
 }
 
 div.top-header form button{
@@ -170,7 +169,7 @@ section.main-section article i{
     transition: 700ms;
 }
 
-section.main-section article i:hover{
+section.main-section article:hover i{
     transform: rotateZ(-90deg); 
 }
 
