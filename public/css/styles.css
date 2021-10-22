@@ -23,6 +23,7 @@ header {
 
 div.top-header img{
     width: 180px;
+    margin-right: 25px;
 }
 
 .top-header form {
@@ -39,7 +40,8 @@ div.top-header form input{
     border-radius: 3px;
     height: 30px;
     max-width: 500px;
-    width: inherit;
+    width: 120%;
+
 }
 
 div.top-header form button{
@@ -62,6 +64,7 @@ div.top-header h2{
     font-weight: 300;
     font-size: 18px;
     padding: 10px;
+    margin: auto;
 }
 
 a#fas {
